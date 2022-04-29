@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form </title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="login_verify.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2> Verify your Account </h2>
+        <p>
+            We emailed you the Four digit code to personal phone Enter the code below to confirm your phone sms 
+        </p>
+
+        <div class="code-container">
+            <form action="/verify" method="POST">
+
+                <h3> phone number </h3>
+                <input type="text" class="box" id="phone_number" name="phone_number" placeholder="phone_number" required />
+                <br>
+                <input type="number" class="code" name="otp" placeholder="0" required>
+
+                <div> 
+                    <button class="btn btn-primary"> Verify </button>
+                </div>
+
+            </form>
+        </div>
+
+        <small>
+            If you didn't receive a code !! <strong> RESEND </strong>
+        </small>
+
+    </div>
+
+</body>
+
+</html>
